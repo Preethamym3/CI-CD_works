@@ -1,9 +1,9 @@
 pipeline {
-	agent { label 'slave2' }
-  
-  triggers {
-        pollSCM '* * * * *'
-  }
+	//agent { label 'slave2' }
+  agent any
+ //triggers {
+ //     pollSCM '* * * * *'
+ // }
 
   tools {
     maven 'maven-3.9.2' 
@@ -12,7 +12,7 @@ pipeline {
     stage ('Build') {
       steps {
         sh '''
-        	cd ./maven/simple-war 
+        	cd ./simple-war 
           cat ./src/main/webapp/index.jsp
         	mvn clean package
         	cd ./target/
@@ -31,7 +31,7 @@ pipeline {
           deploy adapters: [tomcat9(credentialsId: 'tomcat_manager', path: '', url: 'http://65.2.40.144:8080/')], 
                            contextPath: '/itdefined-war-1.0.0', 
                            onFailure: false, 
-                           war: 'maven/simple-war/target/*.war' 
+                           war: '/simple-war/target/*.war' 
         }
       }
     }
