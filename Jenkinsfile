@@ -28,7 +28,7 @@ pipeline {
           // onFailure: false                 –> Flag used to control the deployment, 
           //                                     If pipeline Job fails, below deploy block will not run.
           // war: ‘target/*.war’ –> Your war file name
-          deploy adapters: [tomcat9(credentialsId: 'tomcat_manager', path: '', url: 'http://65.2.40.144:8080/')], 
+          deploy adapters: [tomcat9(credentialsId: 'webservercred', path: '', url: 'http://44.212.57.241:8080/')], 
                            contextPath: '/Simple-war-1.1.0', 
                            onFailure: false, 
                            war: '/simple-war/target/*.war' 
