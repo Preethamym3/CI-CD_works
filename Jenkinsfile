@@ -6,14 +6,14 @@ pipeline {
  // }
 
   tools {
-    maven 'maven-3.9.2' 
+    maven 'maven-3.9.8' 
   }
   stages {
     stage ('Build') {
       steps {
         sh '''
         	cd ./simple-war 
-          cat ./src/main/webapp/index.jsp
+                cat ./src/main/webapp/index.jsp
         	mvn clean package
         	cd ./target/
         	ls
