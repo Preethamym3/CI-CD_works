@@ -29,9 +29,9 @@ pipeline {
           //                                     If pipeline Job fails, below deploy block will not run.
           // war: ‘target/*.war’ –> Your war file name
           deploy adapters: [tomcat9(credentialsId: 'webservercred', path: '', url: 'http://44.201.200.244:8080/')], 
-                           contextPath: '/Simple-war-1.1.0', 
+                           contextPath: '/itdefined-war-1.0.0', 
                            onFailure: false, 
-                           war: '/simple-war/target/*.war' 
+                           war: '/simple-war/targetitdefined-war-1.0.0.war' 
         }
       }
     }
