@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.itdefined</groupId>
-	<artifactId>simple-war</artifactId>
-	<version>1.1.0</version>
+	<artifactId>itdefined-war</artifactId>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>IT Defined Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
@@ -21,7 +21,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>3.4.1-SNAPSHOT</version>
+				<version>2.1.1</version>
 			</plugin>
 		</plugins>
 	</build>
