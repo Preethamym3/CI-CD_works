@@ -3,7 +3,7 @@
 <title>itdefined.org!</title>
 </head>
 <body>
-	<h1>git webhook ....deployed ......from preetham! webhook deploy new development</h1>
+	<h1>preetham from preetham! webhook deploy new development</h1>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
