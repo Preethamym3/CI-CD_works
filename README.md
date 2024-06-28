@@ -13,4 +13,6 @@ lgin to tomcat server and /opt/tomcat/startup.sh run it and use the username and
 in jenkins file edit the deply dection by ip credid and location of the sourcecode and files
   add maven tool for jenkins
  manage jenkins > tools> add maven (version same as jenkins)
+ add "deploy to container" plugin
+ in jenkins file keep the war file location same as build location and add target to it
  
