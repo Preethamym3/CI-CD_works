@@ -16,3 +16,5 @@ in jenkins file edit the deply dection by ip credid and location of the sourceco
  add "deploy to container" plugin
  in jenkins file keep the war file location same as build location and add target to it
  
+in pom--> artifct name and version of war = war file name
+in jenkins --> cntext id is the name of the app in tomcat it shows
