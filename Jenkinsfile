@@ -31,7 +31,7 @@ pipeline {
           deploy adapters: [tomcat9(credentialsId: 'webservercred', path: '', url: 'http://3.87.214.215:8080/')], 
                            contextPath: '/itdefined-war-1.0.0', 
                            onFailure: false, 
-                           war: '/itdefined-war-1.0.0.war' 
+                           war: 'simple-war/target/itdefined-war-1.0.0.war' 
         }
       }
     }
